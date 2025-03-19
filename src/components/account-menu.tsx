@@ -14,13 +14,15 @@ export function AccountMenu() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button
-          variant="outline"
-          className="flex items-center gap-2 select-none"
-        >
-          Pizza Shop
-          <ChevronDown />
-        </Button>
+        <span>
+          <Button
+            variant="outline"
+            className="flex items-center gap-2 select-none"
+          >
+            Pizza Shop
+            <ChevronDown />
+          </Button>
+        </span>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-56">
         <DropdownMenuLabel className="flex flex-col">
