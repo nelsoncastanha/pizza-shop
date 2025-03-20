@@ -1,4 +1,4 @@
-import { ChevronDown } from 'lucide-react'
+import { Building, ChevronDown, LogOut } from 'lucide-react'
 
 import { Button } from './ui/button'
 import {
@@ -32,7 +32,14 @@ export function AccountMenu() {
           </span>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem></DropdownMenuItem>
+        <DropdownMenuItem>
+          <Building className="mr-2 h-4 w-4" />
+          <span>Perfil da loja</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem className="text-rose-500 dark:text-rose-400">
+          <LogOut className="mr-2 h-4 w-4" />
+          <span>Sair</span>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )
