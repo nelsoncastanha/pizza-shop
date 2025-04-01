@@ -38,16 +38,11 @@ export function StoreProfileDialog() {
 
   const { register, handleSubmit, reset } = useForm<StoreProfileSchema>({
     resolver: zodResolver(storeProfileSchema),
+    values: {
+      name: managedRestaurant?.name ?? '',
+      description: managedRestaurant?.description ?? '',
+    },
   })
-
-  useEffect(() => {
-    if (managedRestaurant) {
-      reset({
-        name: managedRestaurant?.name ?? '',
-        description: managedRestaurant?.description ?? '',
-      })
-    }
-  }, [managedRestaurant, reset])
 
   return (
     <DialogContent>
