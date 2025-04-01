@@ -36,7 +36,7 @@ export function StoreProfileDialog() {
     managedRestaurant?.description,
   )
 
-  const { register, handleSubmit, reset } = useForm<StoreProfileSchema>({
+  const { register, handleSubmit } = useForm<StoreProfileSchema>({
     resolver: zodResolver(storeProfileSchema),
     values: {
       name: managedRestaurant?.name ?? '',
