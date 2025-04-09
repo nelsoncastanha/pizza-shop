@@ -35,7 +35,7 @@ export function SignIn() {
 
   async function handleSignIn(data: SignInForm) {
     try {
-      console.log(data)
+      // console.log(data)
 
       await authenticate({ email: data.email })
 
