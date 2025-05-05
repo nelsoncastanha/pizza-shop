@@ -40,12 +40,6 @@ test('sign up with wrong credentials', async ({ page }) => {
   expect(toast).toBeVisible()
 
   await page.waitForTimeout(2000)
-
-  // const toast = page.getByText('Credenciais inválidas.')
-
-  // expect(toast).toBeVisible()
-
-  // await page.waitForTimeout(2000)
 })
 
 test('navigate to new login page', async ({ page }) => {
